@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle button</title>
+</head>
+<style>
+    #btn {
+        padding: 10px 16px;
+        color: rgb(82, 202, 223);
+        background-color: rgb(235, 250, 96);
+        cursor: pointer;
+        border-radius: 8px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2>This is a file page</h2>
+        <p id="para">Exercise is any bodily activity that enhances or maintains physical fitness and overall health and wellness.[1] It is performed for various reasons, to aid growth and improve strength, preventing aging, developing muscles and the cardiovascular
+            system, honing athletic skills, weight loss or maintenance, improving health[2] and also for enjoyment. Many individuals choose to exercise outdoors where they can congregate in groups, socialize, and enhance well-being</p>
+    </div>
+    <button id="btn" onclick="t()">Toogle button</button>
+    <script>
+    
+
+        function t() {
+            let para = document.getElementById('para');
+            let btn = document.getElementById('btn');
+
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            } else {
+                para.style.display = 'block';
+            }
+
+        }
+    </script>
+</body>
+
+</html>
